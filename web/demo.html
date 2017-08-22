@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var xmlhttp;
+        var t1;
+
+        function sendRequest()
+        {
+            xmlhttp.open("get", "/TemSer", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+        }
+
+        function loadXMLDoc()
+        {
+            if (window.XMLHttpRequest)
+            {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else
+            {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                {
+                    document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    console.log("数据更新",xmlhttp.responseText);
+                }
+            };
+            xmlhttp.open("get", "/TemSer", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+            t1 = window.setInterval(sendRequest,1000);
+        }
+
+        function remove()
+        {
+            window.clearInterval(t1);
+        }
+
+    </script>
+</head>
+<body>
+
+<h2>实时获取温度数据Demo</h2>
+<button type="button" onclick="loadXMLDoc()">开始获取数据</button>
+<button type="button" onclick="remove()">停止获取数据</button>
+<div id="myDiv">传感器id是tem1当前温度是97</div>
+
+</body>
+</html>

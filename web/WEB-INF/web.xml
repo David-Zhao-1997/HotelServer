@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>InitSer</servlet-name>
+        <servlet-class>Servlet.InitSer</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InitSer</servlet-name>
+        <url-pattern>/InitSer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SensorSer</servlet-name>
+        <servlet-class>Servlet.SensorSer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SensorSer</servlet-name>
+        <url-pattern>/SensorSer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TemSer</servlet-name>
+        <servlet-class>Servlet.TemSer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TemSer</servlet-name>
+        <url-pattern>/TemSer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>Servlet.Servlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/FAN_ERROR.mp4</url-pattern>
+    </servlet-mapping>
+</web-app>
