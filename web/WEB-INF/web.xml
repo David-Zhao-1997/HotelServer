@@ -16,6 +16,16 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>TsdbQuerySer</servlet-name>
+        <servlet-class>Servlet.TsdbQuerySer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TsdbQuerySer</servlet-name>
+        <url-pattern>/TsdbQuerySer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>SensorSer</servlet-name>
         <servlet-class>Servlet.SensorSer</servlet-class>
     </servlet>

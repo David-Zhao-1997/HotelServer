@@ -21,6 +21,8 @@
       <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/third-party/logback-classic-1.1.2.jar!/" />
       <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/third-party/logback-core-1.1.2.jar!/" />
       <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/third-party/slf4j-api-1.7.7.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/lib/jstl.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/lib/standard.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/Desktop/TestMQTTJava/TestMQTTJava/lib/bce-java-sdk-0.10.21-javadoc.jar!/" />

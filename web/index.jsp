@@ -1,6 +1,7 @@
-<%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <html>
 <head>
     <title>Dashboard </title>
@@ -88,7 +89,8 @@
                 <div class="panel panel-headline">
                     <div class="panel-heading">
                         <h3 class="panel-title">实时概况</h3>
-                        <p class="panel-subtitle"><%=new SimpleDateFormat("yyyy年MM月dd日").format(new Date())%></p>
+                        <p class="panel-subtitle"><%=new SimpleDateFormat("yyyy年MM月dd日").format(new Date())%>
+                        </p>
                     </div>
                     <div class="panel-body">
                         <div class="row">

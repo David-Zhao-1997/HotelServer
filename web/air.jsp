@@ -1,6 +1,7 @@
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -141,19 +142,13 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <center>
                             <iframe width="1000" height="500" name="chart_frame"
                                     src="air_chart_.html" frameborder="0"></iframe>
                         </center>
-
-
                     </div>
                 </div>
                 <!-- END OVERVIEW -->
-
-
             </div>
         </div>
         <!-- END MAIN CONTENT -->
