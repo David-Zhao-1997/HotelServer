@@ -13,9 +13,11 @@ public class Conn
         Connection conn = null;
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://123.206.204.252:3306/bikeserver?user=BikeServer&password=qaz13047409865";
-            conn = DriverManager.getConnection(url);
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            String dbURL = "jdbc:sqlserver://118.89.238.39:1433;DatabaseName=miniHotel";
+            String userName = "david";
+            String userPwd = "qaz13047409865";
+            conn = DriverManager.getConnection(dbURL, userName, userPwd);
 //            System.out.println(conn.getMetaData().getURL());
             return conn;
         }
@@ -24,5 +26,11 @@ public class Conn
             e.printStackTrace();
             return null;
         }
+    }
+
+    public static void main(String[] args)
+    {
+        Conn conn = new Conn();
+        System.out.println(conn.getCon());
     }
 }

@@ -98,7 +98,7 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-thermometer-3"></i></span>
                                     <p>
-                                        <span class="number" id="tem">37</span>
+                                        <span class="number" id="tem">--</span>
                                         <span class="title">摄氏度</span>
                                     </p>
                                 </div>
@@ -107,17 +107,8 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-tint"></i></span>
                                     <p>
-                                        <span class="number" id="hud">67</span>
+                                        <span class="number" id="hud">--</span>
                                         <span class="title">%RH</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="metric">
-                                    <span class="icon"><i class="fa fa-fire"></i></span>
-                                    <p>
-                                        <span class="number">正常</span>
-                                        <span class="title">舱内安全</span>
                                     </p>
                                 </div>
                             </div>
@@ -125,8 +116,35 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-life-buoy"></i></span>
                                     <p>
-                                        <span class="number">正常</span>
-                                        <span class="title">戒备状态</span>
+                                        <span class="number" id="CO2">--</span>
+                                        <span class="title">二氧化碳</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-life-buoy"></i></span>
+                                    <p>
+                                        <span class="number" id="CO">--</span>
+                                        <span class="title">一氧化碳</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-life-buoy"></i></span>
+                                    <p>
+                                        <span class="number" id="VOC">--</span>
+                                        <span class="title">VOC</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-life-buoy"></i></span>
+                                    <p>
+                                        <span class="number" id="PM2">--</span>
+                                        <span class="title">PM2.5</span>
                                     </p>
                                 </div>
                             </div>
@@ -166,5 +184,4 @@
 
 
 </body>
-
 </html>

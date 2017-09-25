@@ -51,6 +51,10 @@
 //                    alert(xmlhttp.responseText);
                     window.parent.document.getElementById("tem").innerHTML = xmlhttp.responseText.split("&")[1];
                     window.parent.document.getElementById("hud").innerHTML = xmlhttp.responseText.split("&")[2];
+                    window.parent.document.getElementById("PM2").innerHTML = xmlhttp.responseText.split("&")[3];
+                    window.parent.document.getElementById("CO").innerHTML = xmlhttp.responseText.split("&")[4];
+                    window.parent.document.getElementById("CO2").innerHTML = xmlhttp.responseText.split("&")[5];
+                    window.parent.document.getElementById("VOC").innerHTML = xmlhttp.responseText.split("&")[6];
                     insAndDraw(xmlhttp.responseText);
 //                    console.log("数据更新", xmlhttp.responseText);
                 }

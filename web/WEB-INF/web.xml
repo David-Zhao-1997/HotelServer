@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>InitSer</servlet-name>
-        <servlet-class>Servlet.InitSer</servlet-class>
+        <servlet-class>webServlet.InitSer</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
@@ -16,8 +16,18 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>AndroidLoginSer</servlet-name>
+        <servlet-class>AndroidServer.servlet.AndroidLoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AndroidLoginSer</servlet-name>
+        <url-pattern>/AndroidLoginSer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>TsdbQuerySer</servlet-name>
-        <servlet-class>Servlet.TsdbQuerySer</servlet-class>
+        <servlet-class>webServlet.TsdbQuerySer</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -26,30 +36,12 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>SensorSer</servlet-name>
-        <servlet-class>Servlet.SensorSer</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SensorSer</servlet-name>
-        <url-pattern>/SensorSer</url-pattern>
-    </servlet-mapping>
-    <servlet>
         <servlet-name>TemSer</servlet-name>
-        <servlet-class>Servlet.TemSer</servlet-class>
+        <servlet-class>webServlet.TemSer</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>TemSer</servlet-name>
         <url-pattern>/TemSer</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>Servlet2</servlet-name>
-        <servlet-class>Servlet.Servlet2</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Servlet2</servlet-name>
-        <url-pattern>/FAN_ERROR.mp4</url-pattern>
     </servlet-mapping>
 </web-app>

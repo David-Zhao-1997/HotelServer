@@ -107,7 +107,7 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-quora"></i></span>
                                     <p>
-                                        <span class="number" id="aqi">45</span>
+                                        <span class="number" id="aqi">--</span>
                                         <span class="title">空气质量指数</span>
                                     </p>
                                 </div>
@@ -117,7 +117,7 @@
                                     <span class="icon"><img src="assets/img/co.png" width="40px"
                                                             height="40px"></img></span>
                                     <p>
-                                        <span class="number" id="co">正常</span>
+                                        <span class="number" id="co">--</span>
                                         <span class="title">一氧化碳</span>
                                     </p>
                                 </div>
@@ -127,7 +127,7 @@
                                     <span class="icon"><img src="assets/img/c2h5oh.png" width="30px"
                                                             height="30px"></img></span>
                                     <p>
-                                        <span class="number" id="c2h5oh">正常</span>
+                                        <span class="number" id="c2h5oh">--</span>
                                         <span class="title">酒精检测</span>
                                     </p>
                                 </div>
@@ -136,7 +136,7 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-life-buoy"></i></span>
                                     <p>
-                                        <span class="number" id="fan">关闭</span>
+                                        <span class="number" id="fan">--</span>
                                         <span class="title">风扇</span>
                                     </p>
                                 </div>
