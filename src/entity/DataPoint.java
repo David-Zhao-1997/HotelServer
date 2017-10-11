@@ -9,6 +9,17 @@ public class DataPoint
     private int pm2;
     private int co2;
     private int voc;
+    private int mq135;
+
+    public int getMq135()
+    {
+        return mq135;
+    }
+
+    public void setMq135(int mq135)
+    {
+        this.mq135 = mq135;
+    }
 
     public int getCarbonMonoxide()
     {
@@ -83,6 +94,6 @@ public class DataPoint
     @Override
     public String toString()
     {
-        return id + "&" + temperature + "&" + humidity + "&" + pm2 + "&" + carbonMonoxide + "&" + co2 + "&" + voc;
+        return id + "&" + temperature + "&" + humidity + "&" + pm2 + "&" + carbonMonoxide + "&" + co2 + "&" + voc + "&" + mq135;
     }
 }

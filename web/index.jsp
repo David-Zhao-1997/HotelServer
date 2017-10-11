@@ -148,6 +148,15 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="metric">
+                                    <span class="icon"><i class="fa fa-life-buoy"></i></span>
+                                    <p>
+                                        <span class="number" id="MQ135">--</span>
+                                        <span class="title">空气质量</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <center>

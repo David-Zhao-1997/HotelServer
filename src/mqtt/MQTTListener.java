@@ -62,6 +62,7 @@ public class MQTTListener
                 JsonParser jsonParser = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParser.parse(message.toString());
                 DataPoint dp = new DataPoint();
+                dp.setMq135(jsonObject.get("MQ135").getAsInt());
                 dp.setVoc(jsonObject.get("VOC").getAsInt());
                 dp.setCarbonMonoxide(jsonObject.get("Carbon_Monoxide").getAsInt());
                 dp.setTemperature(jsonObject.get("Temperature").getAsInt());
